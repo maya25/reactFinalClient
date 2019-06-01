@@ -1,0 +1,10 @@
+.site-box {
+  padding: 10px;
+}
+
+.site-box-fluid {
+  display: flex;
+  > * {
+    flex: 1;
+  }
+}

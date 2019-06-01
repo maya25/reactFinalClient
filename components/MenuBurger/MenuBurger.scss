@@ -1,0 +1,14 @@
+@import "../../vars.scss";
+
+.menu-burger {
+  width: 27px;
+}
+
+.menu-burger-stripe {
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}

@@ -1,0 +1,10 @@
+@import "../../vars.scss";
+
+.site-footer {
+  padding: 15px;
+  background-color: $green;
+  color: #fff;
+  font-weight: 700;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}

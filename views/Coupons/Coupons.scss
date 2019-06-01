@@ -1,0 +1,78 @@
+@import "../../vars.scss";
+
+.coupons-item {
+  margin-bottom: 20px;
+}
+
+.coupons-item-title {
+  margin: 0 5px 5px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.coupons-item-content {
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 7px;
+}
+
+.coupons-item-location {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px 0;
+  color: #fff;
+  background-color: $secondary;
+  min-width: 100px;
+  text-align: center;
+}
+
+.qr-code {
+  text-align: center;
+}
+
+.qr-code-image-wrapper {
+  margin: 40px 0;
+  padding: 0 50px;
+}
+
+.qr-code-image {
+  width: 70%;
+}
+
+.qr-code-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.qr-code-disclaimer {
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.my-coupon-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $secondary;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  &:nth-child(2n) {
+    background-color: $green;
+  }
+  display: flex;
+  justify-content: space-between;
+  > * {
+    margin: 0 5px;
+    flex: 1;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

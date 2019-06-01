@@ -1,0 +1,54 @@
+@import "../../vars.scss";
+
+.site-header {
+  height: 40px;
+  background: $green;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.site-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  &.anonymous {
+    justify-content: center;
+  }
+}
+
+.site-header-user-icon {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    margin-right: 10px;
+  }
+  img {
+    width: 30px;
+  }
+}
+
+.site-header-logo {
+  .site-header-logo-pretty {
+    font-family: Aguafina Script, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+  }
+  span {
+    font-size: 17px;
+  }
+  a {
+    font-weight: 700;
+    &,
+    &:hover,
+    &:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

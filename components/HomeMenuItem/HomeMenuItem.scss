@@ -1,0 +1,31 @@
+@import "../../vars.scss";
+
+.home-menu-item {
+  flex-basis: calc(50% - 30px);
+  margin: 20px 10px;
+}
+
+.home-menu-item-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: $secondary;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-menu-item-icon {
+  max-width: 50%;
+}
+
+.home-menu-item a {
+  display: inline-block;
+
+  &,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    color: #000;
+  }
+}

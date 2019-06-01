@@ -1,0 +1,78 @@
+@import "../../vars.scss";
+
+.site-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  backface-visibility: hidden;
+  will-change: transform;
+  z-index: 20;
+  transition: opacity 0.2s, visibility 0.2s;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    .menu-list-wrapper {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.menu-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 22;
+}
+
+.menu-list-wrapper {
+  position: absolute;
+  z-index: 23;
+  top: 0;
+  left: 0;
+  transform: translate3d(-280px, 0, 0);
+  height: 100%;
+  width: 280px;
+  background-color: #021f54;
+  transition: transform 0.4s;
+}
+
+.menu-item {
+  &:not(:last-child) {
+    border-bottom: 1px solid $secondary;
+  }
+  &.selected {
+    .menu-item-link {
+      background-color: $secondary;
+    }
+  }
+}
+.menu-item-link {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  transition: background-color 0.2s;
+  padding: 10px;
+  &,
+  &:hover,
+  &:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.menu-item-icon {
+  width: 20px;
+}
+
+.menu-item-title {
+  margin-right: 20px;
+}

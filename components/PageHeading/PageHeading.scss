@@ -1,0 +1,75 @@
+@import "../../vars.scss";
+
+.page-heading {
+  background-color: $primary;
+}
+.page-heading-top {
+  padding: 10px;
+  a {
+    font-size: 14px;
+    font-weight:600;
+    &,
+    &:hover,
+    &:visited {
+      color: $green;
+    }
+  }
+}
+
+.page-heading-top-icon {
+  width: 40px;
+}
+
+.page-heading-title {
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  direction: ltr;
+  img {
+    margin-left: 10px;
+  }
+}
+
+.page-link-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.page-heading-bottom {
+  border-top: 1px solid $secondary;
+}
+
+.page-link-item {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  flex: 1;
+  transition: 0.2s background-color;
+  &:not(:last-child) {
+    border-left: 1px solid $secondary;
+  }
+
+  a,
+  span {
+    display: block;
+    height: 100%;
+    font-size: 16px;
+    &,
+    &:hover,
+    &:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &.selected {
+    background-color: $secondary;
+    a {
+      font-weight: 700;
+    }
+  }
+}
